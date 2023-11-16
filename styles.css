@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500');
+@font-face {
+    font-family: 'Mallse';
+    src: local('Mallse'), local('Mallse'),
+        url('MallseRegular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'F37 Judge';
+    src: local('F37 Judge Bold'), local('F37-Judge-Bold'),
+        url('F37Judge-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+/*#408ec6 */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+	
+    
+}
+/* Permet de defiler doucement*/
+html{
+	scroll-behavior: smooth;
+    background-color:#f8f8f8;
+}
+header{
+    background-image:url(risque-ia.png);
+}
+body{
+    background: linear-gradient(217deg, rgba(239, 236, 249,.8),rgba(239, 236, 249,0) 70.71%),
+                linear-gradient(127deg, rgba(127, 156, 247,.8), rgba(127, 156, 247,0) 70.71%),
+                linear-gradient(320deg, rgba(244, 115, 120,.8), rgba(244, 115, 120,0) 70.71%);
+
+}
+/*Gère le menu*/
+nav{
+    width: 100%;/*Permet que le menu prenne toute la page*/
+    margin: 0px auto 40px auto;/*Gère la marge au desus et en dessous du menu*/
+    background-color: #151623;/*La couleur*/
+    position: sticky;/*Permet que le menu suive /!\ il ne suit plus a partir d'un moment*/
+    top: 0px;/*Permet que le menu soit collé en haut*/
+}
+
+nav ul{
+    list-style-type: none;/*Enlève les puces*/
+}
+
+nav li{
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    
+    color: white;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    box-shadow: inset 0 -2px 0 0 whitesmoke;
+    display: block;/*Toute la surface sera cliquable*/
+    transition: all .3s ease-in-out;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+/*Gere quand on passe sur un lien*/
+nav a:hover{
+    border: none;
+    box-shadow: inset 0 -45px 0 0 #e1e1e1;
+    color: #151623;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+/*Fais les marges et la hauteur de la page*/
+.conteneur{
+  margin: 0px 20px;
+}
+
+h1{
+	 text-align: center;
+	 text-decoration: underline;
+	 padding:20px;
+     background-color: whitesmoke;
+ }
+h2{ 
+    /*background-color: red;*/
+    font-family: 'F37 Judge';
+    font-size: xx-large;
+    
+}
+h3{ 
+    /*background-color: red;*/
+    font-family: 'F37 Judge';
+    font-size: xx-large;
+    margin: 20px;
+    
+}
+p{
+    margin-left: 20px;
+}
+#pres ul li{
+    margin-left: 60px;
+}
+#dangers{
+    padding: 0px;
+}
+.conteneur div{
+    background-color: rgba(255, 255, 255,.1);
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin-left: 35px;
+    margin-right: 35px;
+    transition: all .3s ease-in-out;
+	margin-left:4%;
+	margin-right:4%;
+}
+.conteneur div:hover{
+    background-color: rgba(240, 240, 255,.5);
+}
+img{
+    width: 32%;
+    height: auto;
+    float: right;
+}
+#gen{
+    background-color: rgba(240, 240, 255,.4);
+    margin-left: 15%;
+	margin-right: 15%;
+    
+    height: auto;
+    
+}
+footer{
+    background-color: rgb(10, 11, 26);
+    color: #e1e1e1;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
